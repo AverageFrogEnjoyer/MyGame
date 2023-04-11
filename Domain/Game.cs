@@ -7,11 +7,6 @@ using System.Threading.Tasks;
 
 namespace MyGame.Domain
 {
-    class Game
-    {
-
-    }
-
     public class Player
     {
         public (int X, int Y) position;
@@ -36,7 +31,7 @@ namespace MyGame.Domain
 
         public (int X, int Y) size;
 
-        public Player((int, int) position, int forwardFrames, int backFrames, int leftFrames, int rightFrames, Image sprite)
+        public Player((int, int) position/*, int forwardFrames, int backFrames, int leftFrames, int rightFrames*/, Image sprite)
         {
             this.position = position;
 

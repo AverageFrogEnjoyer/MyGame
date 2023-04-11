@@ -11,6 +11,9 @@ namespace MyGame
     {
         public Image playerSprite;
         public Player player;
+        //public int[,] Map;
+        //public int width = 4;
+        //public int height = 4;
         public Form1()
         {
             InitializeComponent();
@@ -90,8 +93,9 @@ namespace MyGame
         {
             var position = (100, 100);
             playerSprite = new Bitmap(Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Sprites\\Player.png"));
-            player = new Player(position, PlayerModel.Model.forwardFrames, PlayerModel.Model.backFrames, PlayerModel.Model.leftFrames, PlayerModel.Model.rightFrames, playerSprite);
+            player = new Player(position,/* PlayerModel.Model.forwardFrames, PlayerModel.Model.backFrames, PlayerModel.Model.leftFrames, PlayerModel.Model.rightFrames,*/ playerSprite);
             timer1.Start();
+
         }
 
         private void OnPaint(object sender, PaintEventArgs e)
