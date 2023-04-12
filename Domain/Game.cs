@@ -29,7 +29,7 @@ namespace MyGame.Domain
 
         public int currentLimit;
 
-        public (int X, int Y) size;
+        public static (int X, int Y) size;
 
         public Player((int, int) position/*, int forwardFrames, int backFrames, int leftFrames, int rightFrames*/, Image sprite)
         {
