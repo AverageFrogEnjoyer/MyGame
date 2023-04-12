@@ -61,22 +61,18 @@ namespace MyGame
             {
                 case Keys.W:
                     player.direction.Y = -player.speed;
-
                     player.SetAnimationConfiguration(3);
                     break;
                 case Keys.S:
                     player.direction.Y = player.speed;
-                    //player.isMoving = true;
                     player.SetAnimationConfiguration(0);
                     break;
                 case Keys.A:
                     player.direction.X = -player.speed;
-                    //player.isMoving = true;
                     player.SetAnimationConfiguration(1);
                     break;
                 case Keys.D:
                     player.direction.X = player.speed;
-                    //player.isMoving = true;
                     player.SetAnimationConfiguration(2);
                     break;
             }
